@@ -23,7 +23,7 @@ var Cafe = {
             !Telegram.WebApp.initDataUnsafe ||
             !Telegram.WebApp.initDataUnsafe.query_id
         ) {
-            Cafe.isClosed = true;
+            Cafe.isClosed = false;
             $("body").addClass("closed");
             Cafe.showStatus("Cafe is temporarily closed");
             return;
