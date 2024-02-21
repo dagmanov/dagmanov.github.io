@@ -23,9 +23,9 @@ var Cafe = {
             !Telegram.WebApp.initDataUnsafe ||
             !Telegram.WebApp.initDataUnsafe.query_id
         ) {
-            Cafe.isClosed = true;
+            Cafe.isClosed = false;
             $("body").addClass("closed");
-            Cafe.showStatus("Cafe is temporarily closed");
+            Cafe.sheowStatus("Cafe is temporarily closed");
             return;
         }
         $(".js-item-lottie").on("click", Cafe.eLottieClicked);
