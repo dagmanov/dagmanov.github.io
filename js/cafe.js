@@ -8,8 +8,8 @@
 })(jQuery);
 
 var Cafe = {
-    canPay: false,
-    modeOrder: false,
+    canPay: true,
+    modeOrder: true,
     totalPrice: 0,
 
     init: function (options) {
@@ -23,7 +23,7 @@ var Cafe = {
             !Telegram.WebApp.initDataUnsafe ||
             !Telegram.WebApp.initDataUnsafe.query_id
         ) {
-            Cafe.isClosed = false;
+            Cafe.isClosed = true;
             $("body").addClass("closed");
             Cafe.showStatus("Cafe is temporarily closed");
             return;
