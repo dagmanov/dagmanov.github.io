@@ -86,7 +86,7 @@ btn7.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Buy!");
+		tg.MainButton.setText("Donate on Ukraine!");
 		item = "7";
 		tg.MainButton.show();
 	}
